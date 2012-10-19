@@ -36,4 +36,33 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+//! IBAction del boton insertado en la vista. Nos modifica el UILabel presentación con lo que contiene el UITextFiel y nos esconde el teclado (resignFirstResponder)
+//! @param sender
+//! @return 
+-(IBAction)hola:(id)sender{
+    presentacion.text =[NSString stringWithFormat:@"Buenas tardes: %@", nombre.text];
+    [nombre resignFirstResponder];
+}
+
+-(IBAction)changeBackground:(id)sender{
+
+    switch (background.selectedSegmentIndex) {
+        case 0:
+            self.view.backgroundColor= [UIColor redColor];
+            break;
+        case 1:
+            self.view.backgroundColor= [UIColor greenColor];
+            break;
+        case 2:
+            self.view.backgroundColor= [UIColor blueColor];
+            break;
+        case 3:
+            self.view.backgroundColor= [UIColor whiteColor];
+            break;
+        default:
+            break;
+    }
+}
+
 @end

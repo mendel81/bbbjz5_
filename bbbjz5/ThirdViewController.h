@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  ThirdViewController.h
 //  bbbjz5
 //
 //  Created by Synapse Asesores Informaticos, S.L. on 15/10/12.
@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController{
-
-    IBOutlet UIImageView *background;
+@interface ThirdViewController : UITableViewController{
+    NSMutableArray *tweets;
 }
 
+- (void)fetchTweets;
+
 @end
+ 

@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  DetailViewController.h
 //  bbbjz5
 //
 //  Created by Synapse Asesores Informaticos, S.L. on 15/10/12.
@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController{
-
-    IBOutlet UIImageView *background;
+@interface DetailViewController : UIViewController{
+    IBOutlet UILabel *nombre;
+    NSString *nombreDev;
 }
+
+@property (nonatomic, readwrite) NSString *nombreDev;
 
 @end

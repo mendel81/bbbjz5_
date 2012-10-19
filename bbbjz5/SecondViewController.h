@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
+@interface SecondViewController : UIViewController <UITextFieldDelegate>{
+
+    IBOutlet UILabel *presentacion;
+    IBOutlet UITextField *nombre;
+    IBOutlet UISegmentedControl *background;
+    
+}
+
+-(IBAction)hola:(id)sender;
+-(IBAction)changeBackground:(id)sender;
+
 
 @end

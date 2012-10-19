@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  FifthViewController.h
 //  bbbjz5
 //
 //  Created by Synapse Asesores Informaticos, S.L. on 15/10/12.
@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DetailViewController.h"
 
-@interface FirstViewController : UIViewController{
-
-    IBOutlet UIImageView *background;
+@interface FifthViewController : UITableViewController
+{
+    NSArray *backendDev;
+    NSArray *other;
+    NSArray *appsDev;
 }
-
 @end
